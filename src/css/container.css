@@ -4,6 +4,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
+  background: #1c1d20;
 }
 
 @media only screen and (min-width: 375px) {
