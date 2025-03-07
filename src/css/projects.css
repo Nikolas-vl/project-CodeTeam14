@@ -1,0 +1,128 @@
+.container {
+  background: #1c1d20;
+}
+.projects-container {
+  background: #1c1d20;
+  padding-top: 82px;
+  padding-bottom: 82px;
+}
+.projects-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+.projects-list {
+  display: flex;
+  border-radius: 24px;
+  width: 1376px;
+  height: 625px;
+  background-color: #1c1d20;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-list-item-1 {
+  background-color: #fafafa;
+  border-radius: 24px 0 0 24px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+}
+.list-item-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+  height: 132px;
+  width: 494px;
+  margin-left: 64px;
+  margin-top: 223px;
+  margin-right: 130px;
+}
+.list-hashtags-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin-left: 64px;
+  margin-top: 64px;
+}
+.hashtags-text {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 18px;
+  height: 55px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+}
+.see-project-btn {
+  align-items: center;
+  white-space: nowrap;
+  border: none;
+  border-radius: 60px;
+  padding: 18px 50px;
+  width: 177px;
+  height: 55px;
+  background-color: #ed3b44;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-left: 64px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.project-list-item-2 {
+  background: #242527;
+  border-radius: 0 24px 24px 0;
+  width: 688px;
+  height: 625px;
+}
+
+.list-item-img {
+  margin: 120px 37px 120px 37px;
+}
+
+.projects-arrow-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 82px;
+  margin-bottom: 0;
+}
+
+.left-arrow-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background: #1c1d20;
+  border-radius: 60px;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
+}
+.right-arrow-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background: #1c1d20;
+  border-radius: 60px;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
+}
