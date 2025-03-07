@@ -16,7 +16,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap');
+
 body {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
