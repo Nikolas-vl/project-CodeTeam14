@@ -1,3 +1,53 @@
-<footer class="footer">
-  <div class="container"></div>
+<footer class="footer" id="footer">
+
+  <div class="container work-together-box">
+    <div class="title-work-together-box">
+        <h2 class="work-title"><span class="photo-span">
+          <img 
+          srcset="../img/footer/footer-img-1x.jpg, ../img/footer/footer-img-2x.jpg 2x"
+          src="./images/img3.jpg" 
+          alt="photo of men" 
+          width="44"
+          height="44"
+          class="work-title-photo">
+        </span>LET'S 
+            
+          <span class="work-color">WORK</span>
+            TOGETHER</h2>
+      </div>
+
+            <form class="work-form">
+                <label for="user-email">
+                    <input class="work-input" type="email" id="user-email" name="user-email" placeholder="clients@gmail.com">
+                    <p class="label-work"></p>
+                  </label>
+                  
+                <label for="user-comment">
+                    <input class="work-input" type="text" name="user-comment" id="user-comment" placeholder="comments">
+                    </label>
+                <button class="btn-work" type="submit">Send</button>
+            </form>
+
+            <address class="data-address-work">
+                <ul class="address-list">
+                    <li class="list-item-work"><a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+                    <li class="list-item-work"><a href="tel:+3801111111111">+380 11 1111 11 11</a></li>
+                </ul>
+            </address>
+    </div>
+
+  <div class="modal-overlay hidden">
+    <div class="modal-work ">
+        <button type="button" class="btn-close-modal">X</button>
+        
+        <div class="modal-content">
+            <h4 class="modal-title">Thank you for your interest in cooperation!</h4>
+            <p class="modal-text">The manager will contact you shortly to 
+            discuss further details and opportunities
+            for cooperation. Please stay in touch.</p>
+        </div>
+      </div>
+    </div>
+
+<script type="module" src="../js/footer.js"></script>
 </footer>
