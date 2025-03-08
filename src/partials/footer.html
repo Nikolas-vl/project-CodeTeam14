@@ -19,13 +19,23 @@
             <form class="work-form">
                 <label for="user-email">
                     <input class="work-input" type="email" id="user-email" name="user-email" placeholder="clients@gmail.com">
+                    <svg class="input-icon" width="343" height="2" viewBox="0 0 343 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H343" stroke-opacity="0.2" />
+                    </svg>
                     <p class="label-work"></p>
                   </label>
                   
                 <label for="user-comment">
                     <input class="work-input" type="text" name="user-comment" id="user-comment" placeholder="comments">
-                    </label>
-                <button class="btn-work" type="submit">Send</button>
+                    <svg class="input-icon" viewBox="0 0 343 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H343" stroke-opacity="0.2" />
+                    </svg>  
+                  </label>
+                <button class="btn-work" type="submit">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="50" fill="#ED3B44" />
+                  </svg><span class="btn-span">Send</span>
+                </button>
             </form>
 
             <address class="data-address-work">
@@ -38,7 +48,11 @@
 
   <div class="modal-overlay hidden">
     <div class="modal-work ">
-        <button type="button" class="btn-close-modal">X</button>
+        <button type="button" class="btn-close-modal">
+          <svg class="btn-close-icon">
+            <use href="../img/svg/symbol-defs-icons.svg#icon-icon-x"></use>
+          </svg>
+        </button>
         
         <div class="modal-content">
             <h4 class="modal-title">Thank you for your interest in cooperation!</h4>
