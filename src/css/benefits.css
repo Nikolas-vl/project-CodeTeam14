@@ -3,8 +3,6 @@
   padding-bottom: 32px;
   background: #1c1d20;
 }
-.container {
-}
 
 .bnf-main-title {
   font-weight: 600;
@@ -92,9 +90,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .bnf-main-title {
-  }
-
   .bnf-list {
     margin-bottom: 64px;
   }
