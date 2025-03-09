@@ -11,3 +11,45 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.covers {
+  overflow: hidden;
+  width: 100%;
+  backdrop-filter: blur(30px);
+  background-image: linear-gradient(
+      rgba(217, 217, 217, 0.04),
+      rgba(217, 217, 217, 0.04)
+    ),
+    url(/src/img/covers/Rectangle-mobile.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .covers {
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+      ),
+      url(/src/img/covers/Rectangle-mobile-2x.png);
+  }
+}
+.container-covers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  right: -900px;
+  align-content: center;
+  left: 0;
+  transform: rotate(16deg);
+}
+.container-covers-list {
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
