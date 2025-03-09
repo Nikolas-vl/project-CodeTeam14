@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/benefits.js"],"sourcesContent":["const bnfBtn = document.querySelector('#bnfBtn');\nconst scrollFooter = document.querySelector('#footer');\n\nbnfBtn.addEventListener('click', () => {\n  scrollFooter.scrollIntoView({ behavior: 'smooth' });\n});\n"],"names":["bnfBtn","scrollFooter"],"mappings":"ssBAAA,MAAMA,EAAS,SAAS,cAAc,SAAS,EACzCC,EAAe,SAAS,cAAc,SAAS,EAErDD,EAAO,iBAAiB,QAAS,IAAM,CACrCC,EAAa,eAAe,CAAE,SAAU,QAAU,CAAA,CACpD,CAAC"}
