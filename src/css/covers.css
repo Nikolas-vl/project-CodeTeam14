@@ -14,7 +14,7 @@
 .covers {
   overflow: hidden;
   width: 100%;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(25px);
   background-image: linear-gradient(
       rgba(217, 217, 217, 0.04),
       rgba(217, 217, 217, 0.04)
@@ -28,7 +28,7 @@
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .covers {
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(25px);
     background-image: linear-gradient(
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
@@ -47,6 +47,7 @@
   left: 0;
   transform: rotate(16deg);
 }
+
 .container-covers-list {
   width: 375px;
   display: flex;
@@ -55,11 +56,12 @@
 }
 .container-covers-list-anim {
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation: animateX50Y10 10000ms infinite 1000ms;
 }
+
 .container-covers-list-item {
   flex-shrink: 0;
 }
@@ -68,12 +70,13 @@
   transition-duration: 300ms;
   transition-timing-function: linear;
   transition-delay: 100ms;
+  /* height: 960px; */
 }
 .portfolio-list-img:hover {
   transform: scale(1.2);
 }
 .list-covers {
-  animation: animateX10Y50 10000ms infinite 1000ms;
+  animation: animateX10Y50 30000ms infinite 1000ms;
 }
 @keyframes marqueeLine {
   from {
@@ -114,7 +117,7 @@
 
 @media screen and (min-width: 768px) {
   .covers {
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(25px);
     background-image: linear-gradient(
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
@@ -132,7 +135,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .covers {
-      backdrop-filter: blur(30px);
+      backdrop-filter: blur(25px);
       background-image: linear-gradient(
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
@@ -147,7 +150,7 @@
 
 @media screen and (min-width: 1440px) {
   .covers {
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(25px);
     background-image: linear-gradient(
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
@@ -165,7 +168,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .covers {
-      backdrop-filter: blur(30px);
+      backdrop-filter: blur(25px);
       background-image: linear-gradient(
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
