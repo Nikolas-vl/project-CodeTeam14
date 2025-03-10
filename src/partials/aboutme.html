@@ -1,3 +1,131 @@
 <section class="aboutme">
-  <div class="container"></div>
+  <div class="container">
+    <h2 class="visually-hidden-aboutme">About me</h2>
+    <div class="aboutme__content_1_container">
+      <div class="aboutme__content_1">
+        <h2 class="aboutme__title">
+          I work with people all over the world to create impressive and
+          functional websites that reflect each client's unique personality.
+        </h2>
+      </div>
+      <div class="about_me_image_container">
+        <picture class="about_me_image">
+          <source
+            srcset="
+              ../img/aboutme/about-me-dec-1x.jpg 1x,
+              ../img/aboutme/about-me-dec-2x.jpg 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ../img/aboutme/about-me-tab-1x.jpg 1x,
+              ../img/aboutme/about-me-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px) and (max-width: 1439px)"
+          />
+          <source
+            srcset="
+              ../img/aboutme/about-me-mob-1x.jpg 1x,
+              ../img/aboutme/about-me-mob-2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="../img/aboutme/about-me-dec-1x.jpg" alt="About me image" />
+        </picture>
+      </div>
+    </div>
+    <ul class="accordion-container">
+      <li class="ac li-padding-left">
+        <h3 class="ac-header">
+          <button class="ac-trigger">
+            <div class="ac-title">About me</div>
+            <svg class="svg-header-up" width="20" height="20">
+              <use href="../img/svg/icons-faq.svg#icon-Arrow-1"></use>
+            </svg>
+            <svg class="svg-header-down" width="20" height="20">
+              <use href="../img/svg/icons-faq.svg#icon-Arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p>
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+      <li class="ac li-padding-left">
+        <h3 class="ac-header">
+          <button class="ac-trigger">
+            <div class="ac-title li-5-width">ROLE</div>
+            <svg class="svg-header-up" width="20" height="20">
+              <use href="../img/svg/icons-faq.svg#icon-Arrow-1"></use>
+            </svg>
+            <svg class="svg-header-down" width="20" height="20">
+              <use href="../img/svg/icons-faq.svg#icon-Arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>Frontend development</p>
+          <p>HeadlessCMS,Wordpress</p>
+          <p>Blender(enjoy)</p>
+        </div>
+      </li>
+      <li class="ac li-border-last li-padding-left">
+        <h3 class="ac-header">
+          <button class="ac-trigger">
+            <div class="ac-title ac-title-last">EDUCATION</div>
+            <svg class="svg-header-up" width="20" height="20">
+              <use href="../img/svg/icons-faq.svg#icon-Arrow-1"></use>
+            </svg>
+            <svg class="svg-header-down" width="20" height="20">
+              <use href="../img/svg/icons-faq.svg#icon-Arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+          <p>
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+          <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+        </div>
+      </li>
+    </ul>
+    <div class="skills-container">
+      <div class="swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">HTML/CSS</li>
+          <li class="swiper-slide">JavaScript</li>
+          <li class="swiper-slide">React</li>
+          <li class="swiper-slide">Node.js</li>
+          <li class="swiper-slide">React Native</li>
+          <li class="swiper-slide">Soft skills</li>
+        </ul>
+      </div>
+      <button class="swiper-button-next-custom">Next</button>
+    </div>
+  </div>
 </section>
