@@ -1,7 +1,8 @@
 import Accordion from 'accordion-js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  new Accordion('.accordion-container', {
-    openOnInit: [], // Жоден елемент не відкритий за замовчуванням
+  new Accordion('.accordion-container-faq', {
+    showMultiple: true,
+    openOnInit: [],
   });
 });

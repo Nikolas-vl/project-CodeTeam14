@@ -19,7 +19,7 @@
     margin-bottom: 32px;
 }
 
-.ac {
+.li-faq {
     border-top: 1px solid rgba(250, 250, 250, 0.2);
     background-color: #1c1d20;
     box-sizing: border-box;
@@ -56,12 +56,7 @@
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-ul,
-li {
-    box-sizing: border-box;
-}
-
-.accordion-container {
+.accordion-container-faq {
     background-color: #1c1d20;
 
     @media only screen and (min-width: 1440px) {
@@ -73,7 +68,7 @@ li {
 }
 
 
-.ac-trigger {
+.button-faq {
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -84,7 +79,7 @@ li {
     padding: 0;
 }
 
-.ac-title {
+.faq-title {
     width: 280px;
     text-align: left;
     font-weight: 500;
@@ -124,6 +119,40 @@ li {
     }
 }
 
+.paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    margin-top: 16px;
+    
+    @media screen and (min-width: 768px) {
+        width: 670px;
+        margin-top: 26px;
+    }
+}
+
+.svg-header-up {
+    width: 40px;
+    height: 40px;
+    display: none;
+    fill: #1c1d20;
+    stroke: #fafafa;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.svg-header-down {
+    width: 40px;
+    height: 40px;
+    fill: #1c1d20;
+    stroke: #fafafa;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 10px;
+}
 
 .ac.is-active .ac-trigger .svg-header-down {
     display: none;
@@ -140,42 +169,10 @@ li {
     transition-timing-function: ease;
 }
 
-.ac-panel p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
-    margin-top: 16px;
-    
-    @media screen and (min-width: 768px) {
-        width: 670px;
-        margin-top: 26px;
-    }
-}
-
-.ac .ac-panel .ac-text {
-    font: 15px/24px Arial, sans-serif;
-    color: var(--color-black);
-    padding: 8px;
-    margin: 0;
-}
-
 .ac.js-enabled .ac-panel {
     visibility: hidden;
 }
 
 .ac.is-active .ac-panel {
     visibility: visible;
-}
-
-.svg-header-up {
-    width: 40px;
-    height: 40px;
-    display: none;
-}
-
-.svg-header-down {
-    width: 40px;
-    height: 40px;
 }
