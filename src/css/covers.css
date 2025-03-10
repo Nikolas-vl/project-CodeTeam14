@@ -53,3 +53,124 @@
   justify-content: center;
   gap: 30px;
 }
+.container-covers-list-anim {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation: animateX50Y10 10000ms infinite 1000ms;
+}
+.container-covers-list-item {
+  flex-shrink: 0;
+}
+.portfolio-list-img {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 100ms;
+}
+.portfolio-list-img:hover {
+  transform: scale(1.2);
+}
+.list-covers {
+  animation: animateX10Y50 10000ms infinite 1000ms;
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateY(-20%);
+  }
+
+  to {
+    transform: translateX(-90%);
+  }
+}
+
+@keyframes animateX50Y10 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-200px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes animateX10Y50 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(200px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers {
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+      ),
+      url(/img/covers/Rectangle-laptop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-covers-list {
+    width: 768px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .covers {
+      backdrop-filter: blur(30px);
+      background-image: linear-gradient(
+          rgba(217, 217, 217, 0.04),
+          rgba(217, 217, 217, 0.04)
+        ),
+        url(/img/covers/Rectangle-laptop-2x.png);
+    }
+  }
+  .portfolio-list-img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers {
+    backdrop-filter: blur(30px);
+    background-image: linear-gradient(
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+      ),
+      url(/img/covers/Rectangle-comp.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-covers-list {
+    width: 1440px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .covers {
+      backdrop-filter: blur(30px);
+      background-image: linear-gradient(
+          rgba(217, 217, 217, 0.04),
+          rgba(217, 217, 217, 0.04)
+        ),
+        url(/img/covers/Rectangle-comp-2x.png);
+    }
+  }
+}
