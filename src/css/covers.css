@@ -20,7 +20,7 @@
       rgba(217, 217, 217, 0.04),
       rgba(217, 217, 217, 0.04)
     ),
-    url(/img/covers/Rectangle-mobile.png);
+    url(../img/covers/Rectangle-mobile.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
       ),
-      url(/img/covers/Rectangle-mobile-2x.png);
+      url(../img/covers/Rectangle-mobile-2x.png);
   }
 }
 .covers-content {
@@ -129,7 +129,7 @@
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
       ),
-      url(/img/covers/Rectangle-laptop.png);
+      url(../img/covers/Rectangle-laptop.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,7 +154,7 @@
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
         ),
-        url(/img/covers/Rectangle-laptop-2x.png);
+        url(../img/covers/Rectangle-laptop-2x.png);
     }
   }
   .portfolio-list-img:hover {
@@ -169,7 +169,7 @@
         rgba(217, 217, 217, 0.04),
         rgba(217, 217, 217, 0.04)
       ),
-      url(/img/covers/Rectangle-comp.png);
+      url(../img/covers/Rectangle-comp.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +188,7 @@
           rgba(217, 217, 217, 0.04),
           rgba(217, 217, 217, 0.04)
         ),
-        url(/img/covers/Rectangle-comp-2x.png);
+        url(../img/covers/Rectangle-comp-2x.png);
     }
   }
 }
