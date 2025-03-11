@@ -1,0 +1,502 @@
+.footer{
+    margin-top: 82px;
+    
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.label-work{
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    color: #e74a3b;
+    margin-top: 4px;
+}
+
+.error{
+    color: #e74a3b;
+}
+
+.correct{
+    color: #3cbc81;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.work-together-box{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: "Inter Tight", sans-serif;
+    background-image: url(./img/footer/phone-gradient-1x.png);
+    background-position: right;
+    background-repeat: no-repeat;
+
+    
+}
+
+.title-work-together-box{
+    width: 100%;
+    height: auto;
+    margin-bottom: 63px;
+}
+
+.photo-span{
+    background-image: url(./img/footer/image-1x.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    margin: 0 8px 8px 0;
+    vertical-align: middle;
+}
+
+.work-title{ 
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: 100%;
+}
+
+.work-color{
+    color: #ed3b44;
+}
+
+.work-form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.work-input {
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    background-color: #1c1d20;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-width: 0 0 1px 0;
+    outline: none; 
+    transition: border-color 250ms ease;
+    max-width: 343px;
+    
+}
+
+.work-input:hover, .work-input:focus{
+    border-color: #fafafa;
+}
+
+.work-input:focus,
+.work-input:valid {
+    background-color: inherit; 
+    outline: none;
+    box-shadow: none; 
+}
+
+.btn-form-container{
+    margin-top: 32px;
+}
+
+.btn-work {
+    align-self: flex-start; 
+    width: 100px;
+    height: 100px;
+    background-color: #ed3b44;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fafafa;
+    
+}
+
+.btn-work:hover, .btn-work:focus{
+    background-color: #e0373f;
+}
+    
+address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.data-address-work{
+    font-style: normal;
+    text-align: center;
+}
+
+.address-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    gap: 4px;
+    max-width: 100%;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item-work{
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    height: 37px;
+    flex-grow: 1;
+    transition: border-color 250ms ease;
+}
+
+.list-item-work:hover, .list-item-work:focus{
+    border: 1px solid #fafafa;
+    
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 16, 0.6);
+    z-index: 999;
+    display: block; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.btn-close-modal{
+    border: none;
+    background-color: #1c1d20;
+    position: absolute;
+    left: 301px;
+    top: 20px;
+    
+}
+
+.btn-close-icon{
+    width: 22px;
+    height: 22px;
+    stroke: #fafafa;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.btn-close-icon:hover{
+    stroke: rgba(250, 250, 250, 0.2);
+}
+
+.modal-work{
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 64px;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px 32px;
+    width: 343px;
+    height: 276px;
+    background: #1c1d20;
+    overflow: hidden;
+
+}
+
+.modal-content{
+    width: 279px;
+    height: auto;
+}
+
+.modal-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+}
+
+.modal-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+}
+
+/* ======================================================= */
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .work-together-box{
+        padding-top: 80px;
+        padding-bottom: 169px;
+        background-image: url(./img/footer/gradient-1x.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .title-work-together-box{
+        width: 542px;
+        height: auto;
+        margin-bottom: 18px;
+    }
+
+    .work-title{
+        font-size: 64px;
+        margin-bottom: 12px;
+    }
+
+    .photo-span{
+        background-image: url(./img/footer/footer-img-1x.jpg);
+        width: 70px;
+        height: 70px;
+    }
+
+    .work-form{
+        align-items: center;
+        flex-direction: row;
+        gap: 32px;
+        height: auto;
+        margin-bottom: 18px;
+    }
+
+    .work-input{
+        width: 245px;
+        height: 44px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .btn-work {
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .btn-close-icon{
+        width: 150px;
+        height: 150px;
+    }
+
+    .address-list{
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .modal-work{
+        padding: 64px;
+        width: 492px;
+        height: auto;
+    }
+
+    .btn-close-modal{
+        left: 448px;
+        
+    }
+
+    .btn-close-icon{
+        width: 24px;
+        height: 24px;
+        
+    }
+
+    .modal-content{
+        width: 364px;
+        height: auto;
+    }
+    
+
+}
+
+/* ========================================== */
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        min-width: 1440px;
+    }
+
+    .work-together-box{
+        padding-top: 80px;
+        padding-bottom: 169px;
+        background-image: url(./img/footer/desktop-gradient-1x.png);
+    }
+
+    .title-work-together-box{
+        margin-bottom: 18px;
+    }
+
+
+    .work-title{
+        margin-bottom: 12px;
+        
+    }
+
+    .photo-span{
+        background-image: url(./img/footer/footer-img-1x.jpg);
+        width: 70px;
+        height: 70px;
+    }
+
+    .work-form{
+        align-items: center;
+        flex-direction: row;
+        gap: 32px;
+        height: auto;
+        margin-bottom: 18px; 
+    }
+
+    .work-input{
+        width: 390px;
+        height: 44px;
+        line-height: 44px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .btn-form-container{
+        margin-left: 86px;
+    }
+
+    .input-icon{
+        width: 390px;
+        height: 2px;
+        position: relative;
+        left: -21px;
+    }
+
+    .label-form-work{
+        position: relative;
+    }
+    
+
+    .btn-work {
+        flex-shrink: 0;
+        align-self: center;
+        border-radius: 100%;
+    }
+
+    .data-address-work{
+        width: 418px;
+        height: 55px;
+    }
+
+    .address-list{
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .btn-close-icon{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .btn-close-modal{
+        left: 448px;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    .modal-work{
+        padding: 64px;
+        width: 492px;
+        height: auto;
+    }
+
+    .modal-content{
+        width: 364px;
+        height: auto;
+    }
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+    .photo-span {
+        background-image: 
+        url(./img/footer/image-2x.jpg);
+        }
+
+    .work-together-box{
+        background-image: 
+        url(./img/footer/phone-gradiend-2x.png);
+        
+    }
+
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px){
+    .photo-span {
+        background-image: 
+        url(./img/footer/footer-img-2x.jpg);
+    }
+
+    .work-together-box{
+        background-image: 
+        url(./img/footer/gradient-2x.png);
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1440px){
+    .photo-span {
+        background-image: 
+        url(./img/footer/footer-img-2x.jpg);
+    }
+
+    .work-together-box{
+        background-image: url(./img/footer/desktop-gradient-2x.png
+        );
+    }
+}
+
