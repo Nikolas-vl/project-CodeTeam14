@@ -1,34 +1,42 @@
 <header class="header">
   <div class="container header-container">
     <div class="logo-header">
-      <img src="../img/header/header-face-1x.jpg" 
+      <img src="./img/header/header-face-1x.jpg" 
             alt="Logo"
-            srcset="../img/header/header-face-2x.jpg">
+            srcset="./img/header/header-face-2x.jpg">
       <span>jefferson*</span>
     </div>
 
     <div class="nav">
-        <a href="#" class="menu-btn">Menu</a>
-      <div class="burger-menu">
-        <span class="burger-icon"></span>
+        <div><a href="#" class="menu-btn">Menu</a></div>
+        
+        
+        <div class="navigation-header-list">
+            
+            <button type="button" class="open-modal">
+              <svg width="8" height="8">
+                <use href="../img/svg/symbol-defs-icons.svg#icon-icon-burger"></use>
+              </svg>
+            </button>
+            
+            <ul class="nav-header-ul">
+                <li class="nav-header-link"><a href="#about_me">About me</a></li>
+                <li class="nav-header-link"><a href="#benefits">Benefits</a></li>
+                <li class="nav-header-link"><a href="#projects">Projects</a></li>
+                <li class="nav-header-link"><a href="#faq">FAQ</a></li>
+            </ul>
+  
+            <button type="button" class="close-menu">
+              <svg width="24" height="24">
+                <use href="../img/svg/symbol-defs-icons.svg#icon-icon-x"></use>
+              </svg>
+            </button>
+        </div>
       </div>
-    
-
-    
-    <nav class="navigation-header">
-        <a href="#about_me">About me</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#projects">Projects</a>
-        <a href="#faq">FAQ</a>
-        <button class="close-menu">✕</button>
-      </nav>
-      
-        <!-- <a href="#work-together" class="order-btn">Order the project</a> -->
-    
-    </div>
-
 
   <a href="#work-together" class="order-btn">Order the project</a>
   </div>
+
+
 </header>
 
