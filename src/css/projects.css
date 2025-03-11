@@ -206,3 +206,11 @@
     border-radius: 0 24px 24px 0;
   }
 }
+
+.custom-projects-prev.swiper-button-disabled,
+.custom-projects-next.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+  box-shadow: none;
+}
