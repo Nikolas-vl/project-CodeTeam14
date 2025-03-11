@@ -60,7 +60,7 @@
 }
 
 .projects-link {
-  border: none;
+  display: inline-block;
   text-wrap: nowrap;
   border-radius: 60px;
   padding: 13px 32px;
