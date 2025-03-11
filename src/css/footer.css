@@ -5,7 +5,6 @@
 
 .hidden {
     opacity: 0;
-    display: none;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -33,9 +32,10 @@ a{
 }
 
 .work-together-box{
-    padding: 32px 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-family: "Inter Tight", sans-serif;
-    background-image: url(../img/footer/phone-gradient-1x.png);
+    background-image: url(./img/footer/phone-gradient-1x.png);
     background-position: right;
     background-repeat: no-repeat;
 
@@ -49,7 +49,7 @@ a{
 }
 
 .photo-span{
-    background-image: url("../img/footer/image-1x.jpg");
+    background-image: url(./img/footer/image-1x.jpg);
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -79,7 +79,7 @@ a{
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     margin-bottom: 64px;
     position: relative;
 }
@@ -99,7 +99,7 @@ a{
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-width: 0 0 1px 0;
     outline: none; 
-    transition: background-color 0.4s ease-in-out;
+    transition: border-color 250ms ease;
     max-width: 343px;
     
 }
@@ -115,11 +115,9 @@ a{
     box-shadow: none; 
 }
 
-/* .input-icon{
-    width: 343px;
-    height: 2px;
-    stroke: #fafafa;
-} */
+.btn-form-container{
+    margin-top: 32px;
+}
 
 .btn-work {
     align-self: flex-start; 
@@ -128,29 +126,10 @@ a{
     background-color: #ed3b44;
     border: none;
     border-radius: 50%;
-    transition: background-color 0.4s ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #fafafa;
-    /* position: relative;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; */
-}
-
-/* .btn-form-icon{
-    fill: #ed3b44;
-    width: 100px;
-    height: 100px;
     
-} */
-
-/* .btn-span{
-    position: absolute;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #fafafa;
-
-} */
+}
 
 .btn-work:hover, .btn-work:focus{
     background-color: #e0373f;
@@ -165,7 +144,6 @@ address {
 }
 
 .data-address-work{
-    flex-grow: 1;
     font-style: normal;
     text-align: center;
 }
@@ -199,7 +177,7 @@ address {
     padding: 10px 12px;
     height: 37px;
     flex-grow: 1;
-    transition: background-color 0.5s ease;
+    transition: border-color 250ms ease;
 }
 
 .list-item-work:hover, .list-item-work:focus{
@@ -234,6 +212,11 @@ address {
     width: 22px;
     height: 22px;
     stroke: #fafafa;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.btn-close-icon:hover{
+    stroke: rgba(250, 250, 250, 0.2);
 }
 
 .modal-work{
@@ -286,13 +269,17 @@ address {
     }
     
     .work-together-box{
-        padding: 80px 32px 169px 32px;
-        background-image: url(../img/footer/gradient-1x.png);
+        padding-top: 80px;
+        padding-bottom: 169px;
+        background-image: url(./img/footer/gradient-1x.png);
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     .title-work-together-box{
         width: 542px;
         height: auto;
+        margin-bottom: 18px;
     }
 
     .work-title{
@@ -301,7 +288,7 @@ address {
     }
 
     .photo-span{
-        background-image: url("../img/footer/footer-img-1x.jpg");
+        background-image: url(./img/footer/footer-img-1x.jpg);
         width: 70px;
         height: 70px;
     }
@@ -309,7 +296,7 @@ address {
     .work-form{
         align-items: center;
         flex-direction: row;
-        gap: 20px;
+        gap: 32px;
         height: auto;
         margin-bottom: 18px;
     }
@@ -322,11 +309,6 @@ address {
         justify-content: flex-start;
         flex-direction: column;
     }
-
-    /* .input-icon{
-        width: 245px;
-        height: 2px;
-    } */
 
     .btn-work {
         flex-shrink: 0;
@@ -378,9 +360,15 @@ address {
     }
 
     .work-together-box{
-        padding: 80px 188px 169px 196px;
-        background-image: url(../img/footer/desktop-gradient-1x.png);
+        padding-top: 80px;
+        padding-bottom: 169px;
+        background-image: url(./img/footer/desktop-gradient-1x.png);
     }
+
+    .title-work-together-box{
+        margin-bottom: 18px;
+    }
+
 
     .work-title{
         margin-bottom: 12px;
@@ -388,7 +376,7 @@ address {
     }
 
     .photo-span{
-        background-image: url("../img/footer/footer-img-1x.jpg");
+        background-image: url(./img/footer/footer-img-1x.jpg);
         width: 70px;
         height: 70px;
     }
@@ -396,9 +384,9 @@ address {
     .work-form{
         align-items: center;
         flex-direction: row;
-        gap: 20px;
+        gap: 32px;
         height: auto;
-        margin-bottom: 18px;
+        margin-bottom: 18px; 
     }
 
     .work-input{
@@ -409,7 +397,10 @@ address {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 20px;
+    }
+
+    .btn-form-container{
+        margin-left: 86px;
     }
 
     .input-icon{
@@ -421,7 +412,6 @@ address {
 
     .label-form-work{
         position: relative;
-
     }
     
 
@@ -429,11 +419,6 @@ address {
         flex-shrink: 0;
         align-self: center;
         border-radius: 100%;
-    }
-
-    .btn-close-icon{
-        width: 150px;
-        height: 150px;
     }
 
     .data-address-work{
@@ -449,9 +434,15 @@ address {
     .btn-close-icon{
         width: 24px;
         height: 24px;
-        
     }
     
+    .btn-close-modal{
+        left: 448px;
+        top: 20px;
+        right: 20px;
+
+    }
+
     .modal-work{
         padding: 64px;
         width: 492px;
@@ -474,12 +465,12 @@ address {
 @media (min-resolution: 192dpi) and (min-width: 320px) {
     .photo-span {
         background-image: 
-        url(../img/footer/image-2x.jpg);
+        url(./img/footer/image-2x.jpg);
         }
 
     .work-together-box{
         background-image: 
-        url(../img/footer/phone-gradiend-2x.png);
+        url(./img/footer/phone-gradiend-2x.png);
         
     }
 
@@ -488,23 +479,23 @@ address {
 @media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px){
     .photo-span {
         background-image: 
-        url(../img/footer/footer-img-2x.jpg);
+        url(./img/footer/footer-img-2x.jpg);
     }
 
     .work-together-box{
         background-image: 
-        url(../img/footer/gradient-2x.png);
+        url(./img/footer/gradient-2x.png);
     }
 }
 
 @media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1440px){
     .photo-span {
         background-image: 
-        url(../img/footer/footer-img-2x.jpg);
+        url(./img/footer/footer-img-2x.jpg);
     }
 
     .work-together-box{
-        background-image: url(../img/footer/desktop-gradient-2x.png
+        background-image: url(./img/footer/desktop-gradient-2x.png
         );
     }
 }
