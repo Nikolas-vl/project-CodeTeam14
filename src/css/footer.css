@@ -35,7 +35,7 @@ a{
     padding-top: 32px;
     padding-bottom: 32px;
     font-family: "Inter Tight", sans-serif;
-    background-image: url(./img/footer/phone-gradient-1x.png);
+    background-image: url(../img/footer/phone-gradient-1x.png);
     background-position: right;
     background-repeat: no-repeat;
 
@@ -49,7 +49,7 @@ a{
 }
 
 .photo-span{
-    background-image: url(./img/footer/image-1x.jpg);
+    background-image: url(../img/footer/image-1x.jpg);
     background-size: cover;
     background-position: center;
     display: inline-block;
@@ -267,7 +267,7 @@ address {
     .work-together-box{
         padding-top: 80px;
         padding-bottom: 169px;
-        background-image: url(./img/footer/gradient-1x.png);
+        background-image: url(../img/footer/gradient-1x.png);
         background-repeat: no-repeat;
         background-position: right;
     }
@@ -284,7 +284,7 @@ address {
     }
 
     .photo-span{
-        background-image: url(./img/footer/footer-img-1x.jpg);
+        background-image: url(../img/footer/footer-img-1x.jpg);
         width: 70px;
         height: 70px;
     }
@@ -313,7 +313,7 @@ address {
         border-radius: 50%;
     }
 
-    .btn-close-icon{
+    .btn-work{
         width: 150px;
         height: 150px;
     }
@@ -355,7 +355,7 @@ address {
     .work-together-box{
         padding-top: 80px;
         padding-bottom: 169px;
-        background-image: url(./img/footer/desktop-gradient-1x.png);
+        background-image: url(../img/footer/desktop-gradient-1x.png);
     }
 
     .title-work-together-box{
@@ -370,7 +370,7 @@ address {
     }
 
     .photo-span{
-        background-image: url(./img/footer/footer-img-1x.jpg);
+        background-image: url(../img/footer/footer-img-1x.jpg);
         width: 70px;
         height: 70px;
     }
@@ -413,6 +413,8 @@ address {
         flex-shrink: 0;
         align-self: center;
         border-radius: 100%;
+        width: 150px;
+        height: 150px;
     }
 
     .data-address-work{
@@ -459,12 +461,12 @@ address {
 @media (min-resolution: 192dpi) and (min-width: 320px) {
     .photo-span {
         background-image: 
-        url(./img/footer/image-2x.jpg);
+        url(../img/footer/image-2x.jpg);
         }
 
     .work-together-box{
         background-image: 
-        url(./img/footer/phone-gradiend-2x.png);
+        url(../img/footer/phone-gradiend-2x.png);
         
     }
 
@@ -473,23 +475,23 @@ address {
 @media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px){
     .photo-span {
         background-image: 
-        url(./img/footer/footer-img-2x.jpg);
+        url(../img/footer/footer-img-2x.jpg);
     }
 
     .work-together-box{
         background-image: 
-        url(./img/footer/gradient-2x.png);
+        url(../img/footer/gradient-2x.png);
     }
 }
 
 @media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1440px){
     .photo-span {
         background-image: 
-        url(./img/footer/footer-img-2x.jpg);
+        url(../img/footer/footer-img-2x.jpg);
     }
 
     .work-together-box{
-        background-image: url(./img/footer/desktop-gradient-2x.png
+        background-image: url(../img/footer/desktop-gradient-2x.png
         );
     }
 }
