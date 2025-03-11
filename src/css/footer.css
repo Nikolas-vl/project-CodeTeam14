@@ -264,10 +264,6 @@ address {
 /* ======================================================= */
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-    .container {
-        max-width: 100%;
-    }
-    
     .work-together-box{
         padding-top: 80px;
         padding-bottom: 169px;
@@ -355,9 +351,6 @@ address {
 /* ========================================== */
 
 @media only screen and (min-width: 1440px) {
-    .container {
-        min-width: 1440px;
-    }
 
     .work-together-box{
         padding-top: 80px;
@@ -366,6 +359,7 @@ address {
     }
 
     .title-work-together-box{
+        width: 542px;
         margin-bottom: 18px;
     }
 
