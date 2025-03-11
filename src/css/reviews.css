@@ -1,6 +1,11 @@
 @import 'swiper/swiper-bundle.css';
 @import 'izitoast/dist/css/iziToast.css';
 
+.reviews-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .reviews-swiper.swiper {
   height: 100%;
   padding-bottom: 20px;
@@ -116,6 +121,10 @@
 /* Media */
 
 @media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .reviews-list {
     margin-bottom: 100px;
   }
@@ -140,6 +149,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .reviews-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
   .reviews-list-item.swiper-slide {
     max-width: 332px;
   }
