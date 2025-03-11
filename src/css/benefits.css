@@ -76,6 +76,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   .bnf-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,6 +94,11 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .benefits {
+    padding-top: 86px;
+    padding-bottom: 86px;
+  }
+
   .bnf-list {
     margin-bottom: 64px;
   }
