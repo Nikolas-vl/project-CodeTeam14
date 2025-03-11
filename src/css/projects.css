@@ -1,7 +1,8 @@
 @import url('swiper/css');
 
 .projects-section {
-  padding-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .projects-section-title {
@@ -24,6 +25,10 @@
   height: 928px;
 }
 @media screen and (min-width: 768px) {
+  .projects-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .projects-section .projects-swiper-container {
     height: 1379px;
   }
@@ -35,6 +40,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .projects-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
   .projects-section .projects-item {
     display: flex;
     flex-direction: row;
