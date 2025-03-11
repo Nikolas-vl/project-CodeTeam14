@@ -1,8 +1,6 @@
 const coverS = document.querySelector('.covers');
 const lisT = document.querySelector('.container-covers');
-const childrenOne = lisT.children[0];
-const childrenTwo = lisT.children[1];
-const childrenThree = lisT.children[2];
+const children = lisT.children;
 
 const options = {
   root: null,
@@ -15,19 +13,26 @@ observer.observe(coverS);
 function handlerPagination(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      childrenOne.classList.add('container-covers-list-anim');
-      childrenThree.classList.add('container-covers-list-anim');
-      childrenTwo.classList.add('list-covers');
+      Array.from(children).forEach((child, index) => {
+        if (index === 1 || index === 3) {
+          if (!child.classList.contains('list-covers')) {
+            child.classList.add('list-covers');
+          }
+        } else {
+          if (!child.classList.contains('container-covers-list-anim')) {
+            child.classList.add('container-covers-list-anim');
+          }
+        }
+      });
     } else {
-      if (childrenOne.classList.contains('container-covers-list-anim')) {
-        childrenOne.classList.remove('container-covers-list-anim');
-      }
-      if (childrenThree.classList.contains('container-covers-list-anim')) {
-        childrenThree.classList.remove('container-covers-list-anim');
-      }
-      if (childrenTwo.classList.contains('list-covers')) {
-        childrenTwo.classList.remove('list-covers');
-      }
+      Array.from(children).forEach(child => {
+        if (child.classList.contains('container-covers-list-anim')) {
+          child.classList.remove('container-covers-list-anim');
+        }
+        if (child.classList.contains('list-covers')) {
+          child.classList.remove('list-covers');
+        }
+      });
     }
   });
 }
