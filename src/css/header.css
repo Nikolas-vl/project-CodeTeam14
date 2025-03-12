@@ -1,148 +1,161 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
+
 body.no-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .mobile-burger-menu {
-  display: none;
+    display: none;
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 144px;
-  align-items: center;
-  z-index: 1000;
-  background: rgba(26, 22, 22, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 32px;
+    height: 144px;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(26, 22, 22, 0.5);
 }
 
 .header-container {
-  position: relative;
-  padding-top: 32px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .logo-header {
-  display: flex;
-  gap: 8px;
-  cursor: pointer;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
 }
 
 .logo-header img {
-  width: 80px;
-  height: 80px;
-  border-radius: 18px;
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
 }
 
 .logo-header span {
-  color: #fafafa;
+    color: #FAFAFA;
 }
 
 .menu-btn {
-  color: #fafafa;
-  text-decoration: underline;
-  cursor: pointer;
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
+    color: #FAFAFA;
+    text-decoration: underline;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .nav-menu {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
+
+
+
 
 .nav-header-ul {
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(26, 22, 22, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 22, 22, 0.5);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
+
+
 
 .navigation-header-ul.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
+
+
 
 .nav-header-link {
-  color: #fafafa;
-  font-size: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+    color: #FAFAFA;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
+
 .order-btn {
-  width: 163px;
-  height: 55px;
-  display: flex;
-  padding: 18px 24px;
-  align-items: center;
-  border-radius: 60px;
-  background: #ed3b44;
-  color: #fafafa;
-  letter-spacing: -0.32px;
-  text-decoration: none;
+    width: 163px;
+    height: 55px;
+    display: flex;
+    padding: 18px 24px;
+    align-items: center;
+    border-radius: 60px;
+    background: #ED3B44;
+    color: #FAFAFA;
+    letter-spacing: -0.32px;
+    text-decoration: none;
 }
 
 .order-btn:hover {
-  background-color: #e0373f;
+    background-color: #E0373F;
 }
 
 .mobile-burger-menu > .order-btn {
-  display: none;
+    display: none;
 }
 
 /* !-------------mobile------------ */
 @media (max-width: 767.9px) {
-  .open-modal {
+
+.open-modal {
+    position: absolute;
+    right: 16px;
+    stroke: #FAFAFA;
+}
+
+.close-menu {
     position: absolute;
     top: 32px;
     right: 16px;
-    stroke: #fafafa;
-  }
+    stroke: #FAFAFA;
+}
 
-  .close-menu {
-    position: absolute;
-    top: 32px;
-    right: 16px;
-    stroke: #fafafa;
-  }
 
-  .menu-btn,
-  .order-btn {
+.menu-btn, .order-btn {
     display: none;
-  }
+}
 
-  .mobile-burger-menu {
+
+.mobile-burger-menu {
     visibility: hidden;
     position: absolute;
-    background-image: url(../img/hero/hero-mob-1x.png);
+    background-image: url(../img/hero/hero-mob-1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,16 +169,19 @@ body.no-scroll {
     z-index: 1000;
     width: 100%;
     height: 100vh;
-    transition: transform 0.5s ease-in-out;
-  }
+    transition: transform .5s ease-in-out;
+}
 
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .background-img {
-      background-image: url(../img/hero/hero-mob-2x.png);
+    background-image:
+        url(../img/hero/hero-mob-2x.jpg);
     }
-  }
+}
 
-  .nav-header-ul-mob {
+.nav-header-ul-mob {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -173,10 +189,10 @@ body.no-scroll {
     align-items: center;
     gap: 12px;
     text-decoration: underline;
-    color: #fafafa;
-  }
+    color: #FAFAFA;
+}
 
-  .order-btn-mob {
+.order-btn-mob {
     position: absolute;
     bottom: 64px;
     width: 163px;
@@ -185,42 +201,33 @@ body.no-scroll {
     padding: 18px 24px;
     align-items: center;
     border-radius: 60px;
-    background: #ed3b44;
-    color: #fafafa;
+    background: #ED3B44;
+    color: #FAFAFA;
     letter-spacing: -0.32px;
     text-decoration: none;
-  }
 }
+
+.nav-menu {
+    display: none;
+}
+
+}
+
+
 
 /* !-------планшет, десктоп------- */
 
 @media (min-width: 768px) {
-  .open-modal {
-    display: none;
-  }
+    .open-modal {
+        display: none;
+    }
 
-  .close-menu {
-    display: none;
-  }
+    .close-menu {
+        display: none;
+    }
 
-  .menu-btn {
-    display: block;
-    cursor: pointer;
-  }
-}
-
-/* =============================Styles and animations======================= */
-.menu-btn:hover {
-  color: rgb(237, 59, 68);
-}
-.nav-header-link:hover {
-  color: rgb(237, 59, 68);
-  text-decoration: underline;
-}
-.order-btn {
-  transition: box-shadow 0.6s ease-in-out, background 0.6s ease-in-out;
-}
-.order-btn:hover {
-  box-shadow: 0 0 10px #fafafa, 0 0 20px rgba(224, 55, 63, 0.5);
-  background: #e0373f;
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
 }

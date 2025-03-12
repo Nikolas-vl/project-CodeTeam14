@@ -1,24 +1,18 @@
 .hero-section {
   position: relative;
   backdrop-filter: blur(100px);
-  background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(59, 59, 59, 0.2) 16.67%,
-      rgba(255, 255, 255, 0.2) 100%
-    ),
-    url(../img/hero/hero-mob-1x.png);
+  background: url(/img/hero/hero-mob-1x.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fafafa;
-  padding-top: 32px;
+  padding-top: 281px;
   padding-bottom: 32px;
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../img/hero/hero-mob-2x.png);
+    background-image: url(/img/hero/hero-mob-2x.png);
   }
 }
 
@@ -39,7 +33,6 @@
   color: #fafafa;
   max-width: 100%;
   margin-bottom: 212px;
-  margin-top: calc(281px - 32px);
 }
 
 .social-links {
@@ -47,6 +40,13 @@
   flex-direction: row;
   gap: 4px;
   width: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .social-links {
+    flex-wrap: wrap;
+    gap: 8px 4px;
+  }
 }
 
 .social-links a {
@@ -71,10 +71,18 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-section {
+    background-image: url(/img/hero/hero-tab-1x.png);
+    padding-top: 300px;
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(/img/hero/hero-tab-2x.png);
+    }
+  }
   .hero-title {
     font-size: 90px;
     max-width: 632px;
-    margin-top: calc(300px - 32px);
   }
 
   .social-links-container {
@@ -99,16 +107,16 @@
 }
 
 @media only screen and (min-width: 1440px) {
+    .hero-section {
+        background-image: url(/img/hero/hero-desk-1x.png);
+    }
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-section {
+          background-image: url(/img/hero/hero-desk-2x.png);
+        }
+      }
   .hero-title {
     font-size: 90px;
     max-width: 1184px;
   }
-}
-/* =====================Styles and animation===================*/
-.social-links a {
-  transition: box-shadow 0.6s ease-in-out, background 0.6s ease-in-out;
-}
-.social-links a:hover {
-  box-shadow: 0 0 10px #fafafa, 0 0 20px rgba(224, 55, 63, 0.5);
-  background: #e0373f;
 }

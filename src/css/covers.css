@@ -2,6 +2,7 @@
   padding: 32px 0;
 }
 .covers {
+  overflow: hidden;
   width: 100%;
   backdrop-filter: blur(30px);
   background-image: linear-gradient(
@@ -27,7 +28,7 @@
 }
 .covers-content {
   max-height: 508px;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
 }
