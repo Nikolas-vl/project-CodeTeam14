@@ -24,11 +24,10 @@ body.no-scroll {
 }
 
 .header-container {
+    position: relative;
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -174,6 +173,13 @@ body.no-scroll {
     transition: transform .5s ease-in-out;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .background-img {
+    background-image:
+        url(../img/hero/hero-mob-2x.jpg);
+    }
+}
 
 .nav-header-ul-mob {
     display: flex;
