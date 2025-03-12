@@ -76,6 +76,14 @@
   padding: 0;
 }
 
+.button-faq:hover,
+.button-faq:focus,
+.button-faq:active {
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
+
 .faq-title {
   width: 280px;
   text-align: left;

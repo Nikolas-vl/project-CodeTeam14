@@ -222,6 +222,14 @@
     padding: 0;
 }
 
+.button-aboutme:hover,
+.button-aboutme:focus,
+.button-aboutme:active {
+    background: none;
+        box-shadow: none;
+        outline: none;
+}
+
 .title-aboutme {
     width: 280px;
     text-align: left;
