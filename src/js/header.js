@@ -59,11 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetSection) {
                 window.scrollTo({
-                    top: targetSection.offsetTop - 50, // Відступ для зручності
+                    top: targetSection.offsetTop - 50,
                     behavior: "smooth"
                 });
             }
             
+            document.body.classList.remove("no-scroll");
 
             navMenu.classList.remove("active");
             navMenu.style.opacity = "0";
