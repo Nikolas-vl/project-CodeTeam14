@@ -8,7 +8,7 @@ const swiperProjects = new Swiper('.projects-swiper-container', {
   speed: 1000,
   spaceBetween: 48,
   keyboard: { enabled: true, onlyInViewport: false },
-  mousewheel: true,
+  mousewheel: false,
   allowTouchMove: true,
   simulateTouch: true,
   navigation: {
