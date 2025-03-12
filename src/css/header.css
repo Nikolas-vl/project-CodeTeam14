@@ -182,6 +182,7 @@ body.no-scroll {
 }
 
 .nav-header-ul-mob {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
