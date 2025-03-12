@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     if (!menuBtn || !navMenu || navLinks.length === 0 || !burgerBtn || !closeBtn || !mobileMenu) return;
 
-    // Функція для перемикання класу 'active' у десктопному меню
+    
     function toggleMenu() {
         navMenu.classList.toggle("active");
         if (navMenu.classList.contains("active")) {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Функція для відкриття мобільного меню з анімацією
+    
     function openMobileMenu() {
         mobileMenu.style.visibility = "visible";
         mobileMenu.style.opacity = "1";
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.add("no-scroll");
     }
 
-    // Функція для закриття мобільного меню з анімацією
+
     function closeMobileMenu() {
         mobileMenu.style.opacity = "0";
         mobileMenu.style.transform = "scale(0.8)";
@@ -41,16 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("no-scroll");
     }
 
-    // Відкриття/закриття меню по кліку на кнопку (десктоп)
+
     menuBtn.addEventListener("click", toggleMenu);
 
-    // Відкриття бургер-меню (мобільні пристрої)
+
     burgerBtn.addEventListener("click", openMobileMenu);
 
-    // Закриття бургер-меню по кнопці "Х"
+
     closeBtn.addEventListener("click", closeMobileMenu);
 
-    // Плавний скрол до секцій і закриття мобільного меню
+
     navLinks.forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
             
-            // Закриття меню після вибору
+
             navMenu.classList.remove("active");
             navMenu.style.opacity = "0";
             navMenu.style.transform = "translateY(-10px)";
