@@ -173,6 +173,7 @@ body.no-scroll {
     transition: transform .5s ease-in-out;
 }
 
+
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .background-img {
