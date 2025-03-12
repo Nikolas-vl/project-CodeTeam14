@@ -1,13 +1,7 @@
 .hero-section {
   position: relative;
   backdrop-filter: blur(100px);
-  background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(59, 59, 59, 0.2) 16.67%,
-      rgba(255, 255, 255, 0.2) 100%
-    ),
-    url(/img/hero/hero-mob-1x.png);
+  background: url(/img/hero/hero-mob-1x.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
