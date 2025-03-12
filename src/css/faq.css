@@ -7,6 +7,10 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  @media screen and (min-width: 1440px) {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
 }
 
 .title-faq {
