@@ -141,7 +141,7 @@ body.no-scroll {
   .mobile-burger-menu {
     visibility: hidden;
     position: absolute;
-    background-image: url(../img/hero/hero-mob-1x.jpg);
+    background-image: url(/img/hero/hero-mob-1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -160,7 +160,7 @@ body.no-scroll {
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .background-img {
-      background-image: url(../img/hero/hero-mob-2x.jpg);
+      background-image: url(/img/hero/hero-mob-2x.jpg);
     }
   }
 
