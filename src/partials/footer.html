@@ -1,3 +1,68 @@
-<footer class="footer">
-  <div class="container"></div>
+<footer class="footer" id="worktogether">
+  <div class="container work-together-box">
+    <div class="title-work-together-box">
+      <h1 class="work-title">
+        <span class="photo-span"></span>LET'S
+        <span class="work-color">WORK</span>
+        TOGETHER
+      </h1>
+    </div>
+
+    <form class="work-form">
+      <label class="label-form-work" for="user-email">
+        <input
+          class="work-input"
+          required
+          type="email"
+          id="user-email"
+          name="user-email"
+          placeholder="clients@gmail.com"
+        />
+        <p class="label-work"></p>
+      </label>
+
+      <label class="label-form-work" for="user-comment">
+        <input
+          class="work-input"
+          required
+          type="text"
+          name="user-comment"
+          id="user-comment"
+          placeholder="comments"
+        />
+      </label>
+      <div class="btn-form-container">
+        <button class="btn-work" type="submit">Send</button>
+      </div>
+    </form>
+
+    <address class="data-address-work">
+      <ul class="address-list">
+        <li class="list-item-work">
+          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="list-item-work">
+          <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </address>
+  </div>
+
+  <div class="modal-overlay hidden">
+    <div class="modal-work">
+      <button type="button" class="btn-close-modal">
+        <svg class="btn-close-icon">
+          <use href="./img/svg/symbol-defs-icons.svg#icon-icon-x"></use>
+        </svg>
+      </button>
+
+      <div class="modal-content">
+        <h1 class="modal-title">Thank you for your interest in cooperation!</h1>
+        <p class="modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
 </footer>

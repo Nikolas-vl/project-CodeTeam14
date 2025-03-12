@@ -1,3 +1,154 @@
-<section class="aboutme">
-  <div class="container"></div>
+<section class="aboutme" id="about_me">
+  <div class="container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="aboutme__content_1_container">
+      <div class="aboutme__content_1">
+        <h2 class="aboutme_title_h2">
+          I work with people all over the world to create impressive and
+          <span class="highlight-functional">functional</span>
+          <span class="highlight-websites">websites</span> that reflect each
+          client's unique personality.
+        </h2>
+      </div>
+      <div class="about_me_image_container">
+        <picture class="about_me_image">
+          <source
+            srcset="
+              ./img/aboutme/about-me-dec-1x.jpg 1x,
+              ./img/aboutme/about-me-dec-2x.jpg 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./img/aboutme/about-me-tab-1x.jpg 1x,
+              ./img/aboutme/about-me-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px) and (max-width: 1439px)"
+          />
+          <source
+            srcset="
+              ./img/aboutme/about-me-mob-1x.jpg 1x,
+              ./img/aboutme/about-me-mob-2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./img/aboutme/about-me-dec-1x.jpg" alt="About me image" />
+        </picture>
+      </div>
+    </div>
+    <ul class="accordion-container-aboutme">
+      <li class="ac li-aboutme li-aboutme-1">
+        <h3 class="ac-header">
+          <button class="ac-trigger button-aboutme">
+            <span class="ac-title title-aboutme-li">ABOUT ME</span>
+            <svg class="svg-aboutme-up" width="20" height="20">
+              <use
+                href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-up"
+              ></use>
+            </svg>
+            <svg class="svg-aboutme-down" width="20" height="20">
+              <use
+                href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-down"
+              ></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel ac-panel-aboutme">
+          <p class="aboutme-p aboutme-p-1">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="aboutme-p">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+      <li class="ac li-aboutme">
+        <h3 class="ac-header">
+          <button class="ac-trigger button-aboutme">
+            <span class="ac-title title-aboutme-li">ROLE</span>
+            <svg class="svg-aboutme-up" width="20" height="20">
+              <use
+                href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-up"
+              ></use>
+            </svg>
+            <svg class="svg-aboutme-down" width="20" height="20">
+              <use
+                href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-down"
+              ></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel ac-panel-aboutme">
+          <p class="aboutme-p">Frontend development</p>
+          <p class="aboutme-p">HeadlessCMS,Wordpress</p>
+          <p class="aboutme-p">Blender(enjoy)</p>
+        </div>
+      </li>
+      <li class="ac li-aboutme li-border-last">
+        <h3 class="ac-header">
+          <button class="ac-trigger button-aboutme">
+            <span class="ac-title title-aboutme-li">EDUCATION</span>
+            <svg class="svg-aboutme-up" width="20" height="20">
+              <use
+                href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-up"
+              ></use>
+            </svg>
+            <svg class="svg-aboutme-down" width="20" height="20">
+              <use
+                href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-down"
+              ></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel ac-panel-aboutme">
+          <p class="aboutme-p">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT
+            <span class="break-word">School, New York</span>
+          </p>
+          <p class="aboutme-p">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+            <span class="break-word">School, New York</span>
+          </p>
+          <p class="aboutme-p">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class="skills-container">
+      <div class="swiper swiper-skills">
+        <ul class="swiper-wrapper swiper-skills-wrapper">
+          <li class="swiper-slide swiper-skills-slide">HTML/CSS</li>
+          <li class="swiper-slide swiper-skills-slide">JavaScript</li>
+          <li class="swiper-slide swiper-skills-slide">React</li>
+          <li class="swiper-slide swiper-skills-slide">Node.js</li>
+          <li class="swiper-slide swiper-skills-slide">React Native</li>
+          <li class="swiper-slide swiper-skills-slide">Soft skills</li>
+        </ul>
+      </div>
+      <button class="swiper-skills-next">
+        <svg class="svg-aboutme-next">
+          <use
+            href="./img/svg/symbol-defs-icons.svg#icon-arrow-narrow-right"
+          ></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
