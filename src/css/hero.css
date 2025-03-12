@@ -72,9 +72,14 @@
 
 @media only screen and (min-width: 768px) {
   .hero-section {
+    background-image: url(/img/hero/hero-tab-1x.png);
     padding-top: 300px;
   }
-
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(/img/hero/hero-tab-2x.png);
+    }
+  }
   .hero-title {
     font-size: 90px;
     max-width: 632px;
@@ -102,6 +107,14 @@
 }
 
 @media only screen and (min-width: 1440px) {
+    .hero-section {
+        background-image: url(/img/hero/hero-desk-1x.png);
+    }
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-section {
+          background-image: url(/img/hero/hero-desk-2x.png);
+        }
+      }
   .hero-title {
     font-size: 90px;
     max-width: 1184px;
