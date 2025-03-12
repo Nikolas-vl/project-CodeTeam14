@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
  const skillsSlider = new Swiper(".swiper-skills", {
   slidesPerView: "auto",
   loop: true,
-  speed: 800, // Швидкість анімації в мс (збільшено для плавності)
+  speed: 800,
   freeMode: {
     enabled: true,
     minimumVelocity: 0.02,
     momentum: true,
     momentumBounce: true,
-    momentumBounceRatio: 0.6, // Зменшено відскок для плавності
-    momentumRatio: 0.7, // Зменшено інерцію для м'якшої зупинки
+    momentumBounceRatio: 0.6,
+    momentumRatio: 0.7,
     momentumVelocityRatio: 0.7, 
     sticky: false,
   },
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     enabled: true,
     onlyInViewport: true,
   },
-  effect: "slide", // Інший ефект, наприклад 'fade', якщо потрібно
-  easing: 'ease-in-out', // Додає плавність (доступно у Swiper 10+)
+  effect: "slide",
+  easing: 'ease-in-out',
 });
 
 
@@ -56,10 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (nextNextSlide) {
         nextNextSlide.classList.add("swiper-slide-next");
       }
-      
-      // Додаємо плавний перехід через CSS
-      nextSlide.style.transition = "transform 0.8s ease-in-out";
-      activeSlide.style.transition = "transform 0.8s ease-in-out";
     }
   } else {
     skillsSlider.slideNext();
