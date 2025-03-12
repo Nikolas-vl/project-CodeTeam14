@@ -208,3 +208,19 @@ body.no-scroll {
     cursor: pointer;
   }
 }
+
+/* =============================Styles and animations======================= */
+.menu-btn:hover {
+  color: rgb(237, 59, 68);
+}
+.nav-header-link:hover {
+  color: rgb(237, 59, 68);
+  text-decoration: underline;
+}
+.order-btn {
+  transition: box-shadow 0.6s ease-in-out, background 0.6s ease-in-out;
+}
+.order-btn:hover {
+  box-shadow: 0 0 10px #fafafa, 0 0 20px rgba(224, 55, 63, 0.5);
+  background: #e0373f;
+}
