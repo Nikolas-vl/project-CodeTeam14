@@ -62,7 +62,7 @@
 }
 .swiper-controll-buttons {
   position: absolute;
-  top: calc(100% - 45px);
+  top: calc(100% - 46px);
   left: calc(50% - (52px + 6px));
   display: flex;
   gap: 12px;
@@ -129,7 +129,7 @@
   }
   .swiper-controll-buttons {
     gap: 20px;
-    top: calc(100% - 60px);
+    top: calc(100% - 46px);
     left: calc(50% - (68px + 10px));
   }
   .swiper-button-prev.button-prev,
