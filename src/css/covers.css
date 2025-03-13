@@ -28,7 +28,6 @@
 }
 .covers-content {
   max-height: 508px;
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
 }
@@ -42,7 +41,6 @@
   align-content: center;
   left: 0;
   transform: rotate(16deg);
-  /* max-width: 320px; */
 }
 .container-covers-list {
   width: 375px;
