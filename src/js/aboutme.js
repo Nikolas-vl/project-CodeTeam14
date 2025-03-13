@@ -27,50 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+   },
+  navigation: {
+    nextEl: '.swiper-skills-next',
   },
   effect: "slide",
   easing: 'ease-in-out',
 });
-
-
-  const nextButton = document.querySelector(".swiper-skills-next");
-
-  const mediaQuery = window.matchMedia("(min-width: 1440px)");
-
- const handleNextClick = () => {
-  if (mediaQuery.matches) {
-    const activeSlide = document.querySelector(".swiper-slide-active");
-    const nextSlide = activeSlide.nextElementSibling || document.querySelector(".swiper-slide");
-
-    if (activeSlide && nextSlide) {
-      activeSlide.classList.remove("swiper-slide-active", "swiper-slide-prev", "swiper-slide-next");
-
-      nextSlide.classList.add("swiper-slide-active");
-
-      const prevSlide = nextSlide.previousElementSibling || document.querySelector(".swiper-slide:last-child");
-      const nextNextSlide = nextSlide.nextElementSibling || document.querySelector(".swiper-slide:first-child");
-
-      if (prevSlide) {
-        prevSlide.classList.add("swiper-slide-prev");
-      }
-      if (nextNextSlide) {
-        nextNextSlide.classList.add("swiper-slide-next");
-      }
-    }
-  } else {
-    skillsSlider.slideNext();
-  }
-};
-
-
-  nextButton.addEventListener("click", handleNextClick);
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Tab" || event.key === "ArrowRight") {
-      if (document.activeElement === nextButton) {
-        event.preventDefault();
-        handleNextClick();
-      }
-    }
-  });
 });
