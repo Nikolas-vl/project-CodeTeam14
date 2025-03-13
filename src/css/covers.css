@@ -1,5 +1,5 @@
 .covers-indent {
-  padding: 86px 0;
+  padding: 32px 0;
 }
 .covers {
   overflow: hidden;
@@ -110,6 +110,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .covers-indent {
+    padding: 48px 0;
+  }
+
   .covers {
     backdrop-filter: blur(30px);
     background-image: linear-gradient(
@@ -150,6 +154,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .covers-indent {
+    padding: 82px 0;
+  }
+
   .covers {
     backdrop-filter: blur(30px);
     background-image: linear-gradient(

@@ -71,9 +71,7 @@ const swiperReviews = new Swiper('.reviews-swiper.swiper', {
     onlyInViewport: true,
   },
   grabCursor: true,
-  mousewheel: {
-    invert: false,
-  },
+  mousewheel: false,
 });
 
 initializeReviews();

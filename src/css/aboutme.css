@@ -1,5 +1,5 @@
 .aboutme {
-  padding-top: 32px;
+  padding-top: 64px;
   padding-bottom: 32px;
   background: #1c1d20;
 
@@ -334,4 +334,14 @@
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
+}
+
+/* ================================Styles and animations======================= */
+.svg-aboutme-down,
+.svg-aboutme-up {
+  transition: box-shadow 0.6s ease-in-out, background 0.6s ease-in-out;
+}
+.svg-aboutme-down:hover,
+.svg-aboutme-up:hover {
+  box-shadow: 0 0 10px #fafafa, 0 0 20px;
 }
