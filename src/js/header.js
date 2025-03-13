@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const burgerBtn = document.querySelector('.open-modal');
   const closeBtn = document.querySelector('.close-menu');
   const mobileMenu = document.querySelector('.mobile-burger-menu');
+  const orderBtnMob = document.querySelector('.order-btn-mob');
 
   if (
     !menuBtn ||
@@ -12,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     navLinks.length === 0 ||
     !burgerBtn ||
     !closeBtn ||
-    !mobileMenu
+    !mobileMenu ||
+    !orderBtnMob
   )
     return;
 
@@ -64,5 +66,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       closeMobileMenu();
     });
+  });
+
+  orderBtnMob.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 50,
+        behavior: 'smooth',
+      });
+    }
+
+    closeMobileMenu();
   });
 });
