@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   backdrop-filter: blur(100px);
-  background: url(/img/hero/hero-mob-1x.png);
+  background: url(/img/hero/hero-mob1x.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(/img/hero/hero-mob-2x.png);
+    background-image: url(/img/hero/hero-mob2x.png);
   }
 }
 
@@ -72,12 +72,12 @@
 
 @media only screen and (min-width: 768px) {
   .hero-section {
-    background-image: url(/img/hero/hero-tab-1x.png);
+    background-image: url(/img/hero/hero-tab1x.png);
     padding-top: 300px;
   }
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-      background-image: url(/img/hero/hero-tab-2x.png);
+      background-image: url(/img/hero/hero-tab2x.png);
     }
   }
   .hero-title {
@@ -107,14 +107,14 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .hero-section {
+    background-image: url(/img/hero/hero-dec1x.png);
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-        background-image: url(/img/hero/hero-desk-1x.png);
+      background-image: url(/img/hero/hero-dec2x.png);
     }
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .hero-section {
-          background-image: url(/img/hero/hero-desk-2x.png);
-        }
-      }
+  }
   .hero-title {
     font-size: 90px;
     max-width: 1184px;
